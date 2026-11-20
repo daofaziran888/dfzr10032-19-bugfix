@@ -18,6 +18,7 @@ const Transform = () => import('@/views/transform/index.vue')
 const Flow = () => import('@/views/flow/index.vue')
 const Lineage = () => import('@/views/lineage/index.vue')
 const Report = () => import('@/views/report/index.vue')
+const WebSample = () => import('@/views/web_sample/index.vue')
 
 const router = createRouter({
   history: createWebHistory(),
@@ -25,6 +26,7 @@ const router = createRouter({
     { path: '/', name: 'dashboard', component: Dashboard },
     { path: '/datasource', name: 'datasource', component: Datasource },
     { path: '/crawler', name: 'crawler', component: Crawler },
+    { path: '/web_sample', name: 'web_sample', component: WebSample },
     { path: '/apiclient', name: 'apiclient', component: Apiclient },
     { path: '/incremental', name: 'incremental', component: Incremental },
     { path: '/robot_task', name: 'robot_task', component: RobotTask },
